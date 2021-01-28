@@ -70,7 +70,7 @@ document.getElementById('caseQuantity').addEventListener('change', function () {
     const caseAmount = document.getElementById('caseQuantity').value;
     const caseAmountNumber = parseInt(caseAmount);
     const casePrice = caseAmountNumber * 59;
-    if (casePrice > 0) {
+    if (casePrice >= 0) {
         document.getElementById('casePrice').innerText = casePrice;
         const phoneInput = document.getElementById('phonePrice').innerText;
         const phonePrice = parseInt(phoneInput);
@@ -94,7 +94,7 @@ document.getElementById('phoneQuantity').addEventListener('change', function () 
     const phoneAmount = document.getElementById('phoneQuantity').value;
     const phoneAmountNumber = parseInt(phoneAmount);
     const phonePrice = phoneAmountNumber * 1219;
-    if (phonePrice > 0) {
+    if (phonePrice >= 0) {
         document.getElementById('phonePrice').innerText = phonePrice;
         const caseInput = document.getElementById('casePrice').innerText;
         const casePrice = parseInt(caseInput);
